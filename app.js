@@ -11,7 +11,8 @@ const getAdviceQuote = () => {
     .then((data) => {
       adviceNumber.textContent = `ADVICE #${data.slip.id}`;
       adviceQuote.textContent = `"${data.slip.advice}"`;
-    });
+    })
+    .catch((err) => (adviceQuote.textContent = "Could not fetch quote"));
 };
 
 dice.addEventListener("click", () => {
