@@ -25,7 +25,7 @@ body {
 
 /* Advice Container */
 .advice-container {
-  height: 320px;
+  min-height: 320px;
   width: 350px;
   background-color: var(--dark-grayish-blue);
   display: flex;
@@ -45,6 +45,9 @@ body {
   width: 80%;
   margin-bottom: 1.5rem;
   color: var(--light-cyan);
+  min-height: 150px;
+  display: grid;
+  place-items: center;
 }
 
 /* Dice Image */
