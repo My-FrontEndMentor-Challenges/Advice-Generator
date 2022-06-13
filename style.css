@@ -61,3 +61,16 @@ body {
   position: relative;
   top: 30px;
 }
+
+@media screen and (min-width: 768px) {
+  .advice-container {
+    width: 500px;
+  }
+  .dice-container {
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  .dice-container:hover {
+    box-shadow: 0 0 30px var(--neon-green);
+    cursor: pointer;
+  }
+}
